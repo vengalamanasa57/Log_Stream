@@ -1,6 +1,5 @@
 # LogStream — Distributed Log Analytics & Alerting Platform
 
-## Internship Mid-Project Submission — Week 1 & Week 2
 
 LogStream is a Java-based log ingestion and search platform. It receives structured application logs through gRPC, indexes them using Apache Lucene, and exposes REST search APIs consumed by a React dashboard.
 
