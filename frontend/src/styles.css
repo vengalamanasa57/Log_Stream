@@ -1,0 +1,177 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, Arial, sans-serif;
+  background: #f3f5f8;
+  color: #17202a;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+header {
+  background: #17202a;
+  color: white;
+  padding: 24px 6%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0 0 4px;
+  font-size: 30px;
+}
+
+header p {
+  margin: 0;
+  opacity: 0.75;
+}
+
+.status {
+  border: 1px solid #667085;
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+}
+
+main {
+  width: 88%;
+  max-width: 1400px;
+  margin: 28px auto;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 24px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+}
+
+h2 {
+  margin-top: 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 14px;
+  margin-bottom: 18px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+input, select {
+  padding: 11px;
+  border: 1px solid #d0d5dd;
+  border-radius: 7px;
+  font-size: 14px;
+}
+
+button {
+  border: 0;
+  border-radius: 7px;
+  padding: 11px 18px;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+button:disabled {
+  opacity: 0.6;
+}
+
+.results-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.results-header span {
+  color: #667085;
+  font-size: 14px;
+}
+
+.table-wrap {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+th, td {
+  text-align: left;
+  padding: 12px;
+  border-bottom: 1px solid #eaecf0;
+  white-space: nowrap;
+}
+
+th {
+  background: #f9fafb;
+}
+
+.level {
+  font-weight: 700;
+}
+
+.level.error {
+  color: #b42318;
+}
+
+.level.warn {
+  color: #b54708;
+}
+
+.level.info {
+  color: #175cd3;
+}
+
+.level.debug {
+  color: #667085;
+}
+
+.error {
+  background: #fef3f2;
+  color: #b42318;
+  border: 1px solid #fecdca;
+  border-radius: 8px;
+  padding: 14px;
+  margin-bottom: 20px;
+}
+
+.empty {
+  text-align: center;
+  color: #667085;
+  padding: 35px;
+}
+
+@media (max-width: 1000px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  main {
+    width: 94%;
+  }
+}
