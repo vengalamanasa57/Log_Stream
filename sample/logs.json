@@ -1,0 +1,38 @@
+[
+  {
+    "timestamp": "2026-09-30T10:00:00Z",
+    "level": "ERROR",
+    "service": "payment-service",
+    "message": "Database connection timeout",
+    "responseTimeMs": 1500,
+    "host": "host-1",
+    "traceId": "trace-001"
+  },
+  {
+    "timestamp": "2026-09-30T10:01:00Z",
+    "level": "INFO",
+    "service": "user-service",
+    "message": "User profile loaded successfully",
+    "responseTimeMs": 120,
+    "host": "host-2",
+    "traceId": "trace-002"
+  },
+  {
+    "timestamp": "2026-09-30T10:02:00Z",
+    "level": "WARN",
+    "service": "inventory-service",
+    "message": "Inventory response slower than expected",
+    "responseTimeMs": 900,
+    "host": "host-3",
+    "traceId": "trace-003"
+  },
+  {
+    "timestamp": "2026-09-30T10:03:00Z",
+    "level": "ERROR",
+    "service": "payment-service",
+    "message": "Payment provider returned 500",
+    "responseTimeMs": 2100,
+    "host": "host-1",
+    "traceId": "trace-004"
+  }
+]
