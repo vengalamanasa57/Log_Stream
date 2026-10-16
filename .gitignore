@@ -18,3 +18,9 @@ Thumbs.db
 
 # Logs
 *.log
+
+# Build outputs and IDE configurations
+node_modules/
+dist/
+.idea/
+*.log
