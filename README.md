@@ -104,3 +104,5 @@ LogStream/
 └── sample/
     └── logs.json
 ```
+
+<!-- Reviewed component tests and pipeline configuration -->
