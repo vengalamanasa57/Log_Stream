@@ -1,0 +1,7 @@
+{
+  "name": "Billing API error threshold",
+  "level": "ERROR",
+  "service": "billing-api",
+  "threshold": 100,
+  "enabled": true
+}
